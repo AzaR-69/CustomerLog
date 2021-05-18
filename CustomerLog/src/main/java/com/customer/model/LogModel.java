@@ -9,16 +9,9 @@ import javax.persistence.Table;
 public class LogModel {
 	@Id
 	private String Id;
-	private String name;
 	private String logType;
 	private String date;
 	private String time;
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
 	public String getId() {
 		return Id;
 	}
@@ -45,8 +38,7 @@ public class LogModel {
 	}
 	@Override
 	public String toString() {
-		return "LogModel [name=" + name + ", Id=" + Id + ", logType=" + logType + ", date=" + date + ", time=" + time
-				+ "]";
+		return "LogModel [Id=" + Id + ", logType=" + logType + ", date=" + date + ", time=" + time + "]";
 	}
 	
 }

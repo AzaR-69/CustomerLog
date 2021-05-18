@@ -45,7 +45,6 @@ public class LogService {
 	@Transactional
 	public void checkIn(String name) {
 		LogModel log = new LogModel();
-		log.setName(name);
 		log.setLogType("IN");
 		log.setDate(currentDate);
 		log.setTime(getTime());
@@ -56,7 +55,6 @@ public class LogService {
 	@Transactional
 	public void checkOut(String name) {
 		LogModel log = new LogModel();
-		log.setName(name);
 		log.setLogType("OUT");
 		log.setDate(currentDate);
 		log.setTime(getTime());
