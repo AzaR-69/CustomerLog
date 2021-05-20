@@ -24,7 +24,7 @@ public class LogService {
 			try {
 				Thread.sleep(5*100); 
 				LocalTime time = LocalTime.now(ZoneId.of("Asia/Kolkata"));
-				String currentTime=time.format(DateTimeFormatter.ofPattern("HH:mm"));
+				String currentTime=time.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
 				return currentTime;
 			}
 			catch(Exception e) {
